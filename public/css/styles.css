@@ -1,0 +1,124 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --black-color: #000;
+}
+body{
+    min-height: 100vh;
+    background: -webkit-linear-gradient(66deg,hsl(0, 6%, 16%) 10%, #E7EFF9 60%);
+}
+footer{
+    position:sticky;
+    top:100%;
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+.main-container{
+    padding-top: 10vh;
+    min-width: 533px;
+}
+
+.box{
+    background-color: white;
+    max-width: 400px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.box h1{
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.box img{
+    margin-bottom: 5px;
+}
+#heading{
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+#login{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    position:relative;
+    left: 90vw;
+}
+
+.item{
+    min-height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 15px;
+    gap: 5px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.item:last-child{
+    border-bottom: 0;
+}
+.item p{
+    margin-left: 15px;
+}
+input[type="text"]{
+    background:transparent;
+    margin-left: 35px;
+    border: none;
+    border-bottom:black 2px solid ;
+    height: 60px;
+    top: 10px;
+    width: 313px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+::placeholder {
+    color: grey;
+    opacity: 1;
+}
+
+
+.my-btn{
+    border: white 2px solid;
+    border-radius: 100%;
+    min-height: 50px;
+    width: 50px;
+    background:black;
+    color: white;
+    font-size: 30px;
+
+}
+
+
+input[type="checkbox"]:checked + p{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+form{
+    background-color: #E7EFF9;
+    border-radius: 0 0 5px 5px;
+}
+
+#description{
+    max-width: 80vw;
+}

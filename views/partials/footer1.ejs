@@ -1,0 +1,10 @@
+<%# This is comment in ejs file %>
+<!--Extracting year from system and including it in footer-->
+<% var year = new Date().toLocaleDateString('en-US', {year:'numeric'}); %>
+<footer>
+    <a href="/home" ><p>HOME</p></a>
+    <p>Suneel &copysr; <%= year %></p>
+</footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
